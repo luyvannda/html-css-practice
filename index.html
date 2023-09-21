@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Basic controls: Task 2</title>
+  <title>HTML5 controls: Task 1</title>
   <style>
     body {
       background-color: #fff;
@@ -13,10 +13,6 @@
       margin: 0;
     }
 
-    /* ul>li {
-      list-style-type: none;
-    } */
-
     * {
       box-sizing: border-box;
     }
@@ -25,14 +21,28 @@
 
 <body>
   <form>
+    <h2>Edit your preferences</h2>
     <ul>
       <li>
-        <label for="gallery-img">Choose gallery images to upload</label>
-        <input type="file" name="gallery-img" id="gallery-img"
-          accept=".jpg,.png" multiple>
+        <label for="e-mail">Email:</label>
+        <input type="email" name="email" id="e-mail" required>
+      </li>
+      <li>
+        <label for="website">Website:</label>
+        <input type="url" name="website" id="website" required>
+      </li>
+      <li>
+        <label for="phone">Phone number</label>
+        <input type="tel" name="phone" id="phone" required>
+      </li>
+      <li>
+        <label for="fave-color">Favorite color</label>
+        <input type="color" name="favorite-color" id="fave-color">
+      </li>
+      <li>
+        <button type="submit">Update preferences</button>
       </li>
     </ul>
-    <button type="submit">Submit</button>
   </form>
 </body>
 
