@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Basic controls: Task 1</title>
+  <style>
+    body {
+      background-color: #fff;
+      color: #333;
+      font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+      padding: 1em;
+      margin: 0;
+    }
+
+    ul>li {
+      list-style-type: none;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend>Please inter your login information</legend>
+
+      <ul>
+        <li>
+          <p>
+            <label for="user_id">
+              <strong>User ID:</strong>
+            </label>
+            <input type="email" id="user_id" name="user_id"
+              placeholder="myname@mail.com" required>
+          </p>
+        </li>
+        <li>
+          <p><label for="pwd">
+              <strong>Password:</strong>
+            </label>
+            <input type="password" id="pwd" name="user_pwd" required>
+          </p>
+        </li>
+        <li>
+          <button type="submit">Submit</button>
+        </li>
+      </ul>
+    </fieldset>
+  </form>
+</body>
+
+</html>

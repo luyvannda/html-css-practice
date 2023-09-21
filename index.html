@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Basic controls: Task 1</title>
+  <title>Basic controls: Task 2</title>
   <style>
     body {
       background-color: #fff;
@@ -13,9 +13,9 @@
       margin: 0;
     }
 
-    ul>li {
+    /* ul>li {
       list-style-type: none;
-    }
+    } */
 
     * {
       box-sizing: border-box;
@@ -26,30 +26,49 @@
 <body>
   <form>
     <fieldset>
-      <legend>Please inter your login information</legend>
-
+      <legend>Who is your favorite pony?</legend>
       <ul>
         <li>
-          <p>
-            <label for="user_id">
-              <strong>User ID:</strong>
-            </label>
-            <input type="email" id="user_id" name="user_id"
-              placeholder="myname@mail.com" required>
-          </p>
+          <label for="pinkie">Pinkie Pie</label>
+          <input type="radio" name="pony" id="pinkie" checked>
         </li>
         <li>
-          <p><label for="pwd">
-              <strong>Password:</strong>
-            </label>
-            <input type="password" id="pwd" name="user_pwd" required>
-          </p>
+          <label for="rainbow">Rainbow Dash</label>
+          <input type="radio" name="pony" id="rainbow">
         </li>
         <li>
-          <button type="submit">Submit</button>
+          <label for="twilight">Twilight Sparkle</label>
+          <input type="radio" name="pony" id="twilight">
         </li>
       </ul>
     </fieldset>
+    <fieldset>
+      <legend>Hotdog preferences <em>(checked all that applied)</em></legend>
+      <ul>
+        <li>
+          <label for="vegan">Vegan</label>
+          <input type="checkbox" name="hotdog" id="vegan">
+        </li>
+        <li>
+          <label for="onions">Onions</label>
+          <input type="checkbox" name="hotdog" id="onions">
+        </li>
+        <li>
+          <label for="beef">Beef</label>
+          <input type="checkbox" name="hotdog" id="beef">
+        </li>
+        <li>
+          <label for="chili">Chili</label>
+          <input type="checkbox" name="hotdog" id="chili">
+        </li>
+
+        <li>
+          <label for="other">Other</label>
+          <input type="checkbox" name="hotdog" id="other">
+        </li>
+      </ul>
+    </fieldset>
+    <button>Submit</button>
   </form>
 </body>
 
