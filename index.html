@@ -31,13 +31,25 @@
         <label for="comment">Comment:</label>
         <br>
         <textarea name="user_comment" id="comment" cols="35" rows="10"
-          maxlength="100"></textarea>
+          maxlength="100" oninput="updateCharacterCount(this)">
+        </textarea>
+        <div id="characterCount"></div>
       </li>
       <li>
         <button>Submit comment</button>
       </li>
     </ul>
   </form>
+
+  <script>
+    function updateCharacterCount(textarea) {
+      const characterCount = textarea.value.length;
+      const maxCharacters = textarea.getAttribute("maxlength");
+      const counter = document.getElementById("characterCount");
+      counter.textContent =
+        `Characters: ${characterCount}/${maxCharacters}`;
+    }
+  </script>
 </body>
 
 </html>
