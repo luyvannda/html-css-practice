@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Other controls: Task 2</title>
+  <title>Other controls: Task 3</title>
   <style>
     body {
       background-color: #fff;
@@ -23,23 +23,18 @@
   <form>
     <ul>
       <li>
-        <label for="food">Pick your favorite food:</label>
-        <br>
-        <select name="favorite_food" id="food" multiple size="5">
-          <optgroup label="mains">
-            <option value="salad">Salad</option>
-            <option value="curry">Curry</option>
-            <option value="pizza">Pizza</option>
-            <option value="fajitas">Fajitas</option>
-          </optgroup>
-
-          <optgroup label="snacks">
-            <option value="biscuits">Biscuits</option>
-            <option value="crisps">Crisps</option>
-            <option value="fruit">Fruit</option>
-            <option value="breadsticks">Breadsticks</option>
-          </optgroup>
-        </select>
+        <label for="food">Enter your favorite food:</label>
+        <input type="text" name="favorite_food" id="food" list="mySuggestion">
+        <datalist id="mySuggestion">
+          <option>Salad</option>
+          <option>Curry</option>
+          <option>Pizza</option>
+          <option>Fajitas</option>
+          <option>Biscuits</option>
+          <option>Crisps</option>
+          <option>Fruit</option>
+          <option>Breadsticks</option>
+        </datalist>
       </li>
       <li>
         <button>Submit choice</button>
