@@ -1,46 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
-  <meta charset="utf-8" />
-  <title>Other controls: Task 3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Postcard example</title>
   <style>
-    body {
-      background-color: #fff;
-      color: #333;
-      font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
-      padding: 1em;
-      margin: 0;
-    }
 
-    * {
-      box-sizing: border-box;
-    }
   </style>
 </head>
 
 <body>
   <form>
-    <ul>
-      <li>
-        <label for="food">Enter your favorite food:</label>
-        <input type="text" name="favorite_food" id="food" list="mySuggestion">
-        <datalist id="mySuggestion">
-          <option>Salad</option>
-          <option>Curry</option>
-          <option>Pizza</option>
-          <option>Fajitas</option>
-          <option>Biscuits</option>
-          <option>Crisps</option>
-          <option>Fruit</option>
-          <option>Breadsticks</option>
-        </datalist>
-      </li>
-      <li>
-        <button>Submit choice</button>
-      </li>
-    </ul>
+    <h1>to: Mozilla</h1>
+
+    <div id="from">
+      <label for="name">from:</label>
+      <input type="text" id="name" name="user_name" />
+    </div>
+
+    <div id="reply">
+      <label for="mail">reply:</label>
+      <input type="email" id="mail" name="user_email" />
+    </div>
+
+    <div id="message">
+      <label for="msg">Your message:</label>
+      <textarea id="msg" name="user_message"></textarea>
+    </div>
+
+    <div class="button">
+      <button type="submit">Send your message</button>
+    </div>
   </form>
+
 </body>
 
 </html>
